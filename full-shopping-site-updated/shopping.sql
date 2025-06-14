@@ -1,0 +1,15 @@
+
+CREATE DATABASE IF NOT EXISTS shopping;
+USE shopping;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100),
+    password VARCHAR(100)
+);
+
+CREATE TABLE IF NOT EXISTS orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100),
+    items TEXT
+);
